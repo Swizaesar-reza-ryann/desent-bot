@@ -10,7 +10,7 @@ import desksData from '@/data/desks.json';
 import chairsData from '@/data/chairs.json';
 import accessoriesData from '@/data/accessories.json';
 
-function WorkspaceBuilder() {
+const WorkspaceBuilder = () => {
   const { state, addItem, removeItem, updateQuantity, setActiveCategory } = useWorkspace();
 
   const getCategoryItems = (category: string) => {
@@ -28,13 +28,13 @@ function WorkspaceBuilder() {
     }
   };
 
+  const currentItems = getCategoryItems(state.activeCategory);
+
   const handleRent = () => {
     alert(
       '🎉 Congratulations! Your workspace setup is ready for rent. This would normally take you to checkout.'
     );
   };
-
-  const currentItems = getCategoryItems(state.activeCategory);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -91,7 +91,7 @@ function WorkspaceBuilder() {
       </main>
     </div>
   );
-}
+};
 
 export default function Home() {
   return (

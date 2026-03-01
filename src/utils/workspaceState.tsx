@@ -134,7 +134,7 @@ interface WorkspaceContextType {
 
 const WorkspaceContext = createContext<WorkspaceContextType | undefined>(undefined);
 
-export function WorkspaceProvider({ children }: { children: ReactNode }) {
+const WorkspaceProvider = ({ children }: { children: ReactNode }) => {
   const [state, dispatch] = useReducer(workspaceReducer, initialState);
 
   const addItem = (category: string, item: Item) => {
@@ -166,12 +166,14 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
       {children}
     </WorkspaceContext.Provider>
   );
-}
+};
 
-export function useWorkspace() {
+const useWorkspace = () => {
   const context = useContext(WorkspaceContext);
   if (context === undefined) {
     throw new Error('useWorkspace must be used within a WorkspaceProvider');
   }
   return context;
-}
+};
+
+export { WorkspaceProvider, useWorkspace };

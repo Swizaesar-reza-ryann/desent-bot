@@ -1,52 +1,89 @@
 # Workspace Designer for monis.rent
 
-A modern, interactive workspace designer built for monis.rent - an equipment rental marketplace targeting digital nomads & startups in Bali.
+🚀 **Live Demo**  
+👉 http://vercel-sample
+
+📦 **GitHub Repository**  
+👉 https://github.com/username/repo-name
+
+---
+
+## Overview
+
+An interactive workspace designer built for **monis.rent**, an equipment rental marketplace serving digital nomads and startups in Bali.
+
+Instead of browsing a traditional product catalog, users can visually build their ideal workspace — selecting desks, chairs, monitors, lamps, and accessories — see their setup come to life, and rent it instantly.
+
+This project was built as part of a **design-first coding challenge**, focusing on **user experience, product thinking, and interaction quality** rather than algorithms or backend complexity.
+
+---
 
 ## 🎯 What This App Does
 
 This is a visual, playful setup builder where users can:
 
-- 👀 See their workspace take shape in real-time
-- 🎉 Feel excitement when customizing their setup
-- 📦 Click "Rent Your Setup!" when done
-- 🔢 Adjust quantities for multiple items (2 chairs, 3 monitors, etc.)
-- 🛍️ Browse all items or navigate by category
+- 👀 See their workspace take shape in real time
+- 🛠️ Customize desks, chairs, and accessories visually
+- 🔢 Adjust quantities (e.g. 2 chairs, 3 monitors)
+- 💰 See accurate monthly pricing instantly
+- 🚀 Click **“Rent Your Setup!”** when ready
 
-Users don't want a traditional catalog — they want to visually build their perfect workspace with desks, chairs, monitors, lamps, plants, and all workspace equipment.
+Users don’t want spreadsheets or boring catalogs — they want to build something that _feels_ good to use.
 
-## 🚀 How It Works
+---
 
-### Core Features
+## 🧠 Why This Approach
 
-- **Category Navigation**: Browse through Chairs, Desks, Accessories, or All Items
-- **Visual Item Selection**: Click items to add them to your workspace
-- **Quantity Support**: Add multiple quantities of the same item
-- **Summary Panel**: Track selected items, adjust quantities, and see total price
-- **Clean Interface**: Focused on core item selection and rental process
+The goal of this challenge was not to over-engineer, but to think like a user.
 
-### User Experience
+A freelance developer landing in Bali doesn’t want to compare SKUs — they want to quickly design a workspace, feel confident about it, and move on.
 
-1. Select a category (Chairs, Desks, Accessories, or All Items)
-2. Click items to add them to your workspace (quantities supported)
-3. Use +/- buttons in summary panel to adjust quantities
-4. Review your setup with accurate pricing
-5. Click "Rent Your Setup!" when ready
+This app focuses on:
 
-### Advanced Features
+- Clarity over complexity
+- Visual feedback over raw data
+- Product experience over technical showmanship
 
-- **Multi-Quantity Rental**: Rent 2+ of the same item with proper pricing
-- **Smart Quantity Controls**: Intuitive +/- buttons with auto-removal at 0
-- **Duplicate Prevention**: Smart state management prevents conflicts
-- **Accurate Pricing**: Total calculated with item quantities
-- **Streamlined Navigation**: Simple category tabs with All Items overview
+---
+
+## ✨ Core Features
+
+- **Category Navigation**  
+  Browse Chairs, Desks, Accessories, or view everything via All Items
+
+- **Visual Item Selection**  
+  Click items to instantly add them to your workspace
+
+- **Quantity Support**  
+  Rent multiple units of the same item with intuitive controls
+
+- **Live Summary Panel**  
+  Review items, adjust quantities, and see total monthly cost in real time
+
+- **Clean, Focused UI**  
+  No unnecessary distractions — just the core rental flow
+
+---
+
+## 🧩 User Flow
+
+1. Choose a category or browse all items
+2. Click items to add them to the workspace
+3. Adjust quantities directly from the summary panel
+4. Review the setup and pricing
+5. Click **“Rent Your Setup!”**
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Next.js 16 with App Router
+- **Framework**: Next.js (App Router)
 - **Styling**: Tailwind CSS
-- **State Management**: React Context + useReducer with quantity support
-- **Icons**: Emoji icons for simplicity and universal compatibility
-- **Data**: Static JSON files (no backend required)
+- **State Management**: React Context + `useReducer`
+- **Data Source**: Static JSON (no backend for MVP)
+- **Deployment**: Vercel
+
+---
 
 ## 📁 Project Structure
 
@@ -66,100 +103,76 @@ src/
     └── workspaceState.tsx    # State management with quantity support
 ```
 
+---
+
 ## 🎨 Design Decisions & Trade-offs
 
-### Made for UX Excellence
+### Key Decisions
 
-- **Emoji Icons**: Chosen over image assets for instant loading, universal compatibility, and playful feel
-- **Real-time Updates**: Immediate visual feedback creates excitement and engagement
-- **Quantity Support**: Users can rent exactly what they need (2 chairs, 3 monitors)
-- **Simple State Management**: React Context instead of complex libraries for faster development
-- **Mobile-First**: Responsive design works seamlessly on all devices
-- **Clean Navigation**: Focused category structure with All Items overview
-- **Streamlined Interface**: Removed unnecessary components for better focus
+- **Emoji Icons over Images**  
+  Lightweight, instant loading, and playful — ideal for an MVP
 
-### Trade-offs Made
+- **Context + Reducer**  
+  Chosen for clarity and predictability over heavier state libraries
 
-- **No Backend**: Static data for MVP simplicity - can easily connect to API later
-- **Simple Animations**: Basic hover effects instead of complex animations for faster load times
-- **Limited Categories**: 3 main categories for MVP - more can be added easily
-- **No User Accounts**: Focus on core rental experience first
-- **Removed Category Groups**: Simplified interface to focus on core functionality
-- **No AddButton Component**: Streamlined to use native HTML buttons
+- **Real-time Feedback**  
+  Every interaction updates the UI immediately to keep users engaged
 
-## 🏃‍♂️ How to Run Locally
+- **Simple Navigation**  
+  Category tabs plus All Items for fast exploration
 
-1. **Install dependencies**
+### Trade-offs
 
-   ```bash
-   npm install
-   ```
+- No backend or authentication (intentional for scope)
+- Limited item categories for MVP clarity
+- Minimal animations to prioritize performance and clarity
 
-2. **Run the development server**
-
-   ```bash
-   npm run dev
-   ```
-
-3. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
-
-## 🚀 Deployment
-
-This app is designed for Vercel deployment:
-
-1. **Connect to Vercel**
-
-   ```bash
-   npx vercel
-   ```
-
-2. **Deploy**
-   Follow the prompts to deploy your app
-
-3. **Custom Domain** (optional)
-   Add your custom domain in the Vercel dashboard
-
-## 🎯 Business Context
-
-Built specifically for **monis.rent** - an equipment rental marketplace serving:
-
-- ⭐ Digital nomads in Bali
-- ⭐ Startups needing flexible workspace solutions
-- ⭐ Remote workers wanting quality equipment
-
-The app solves the problem of traditional rental catalogs by providing:
-
-- **Visual Experience**: See your workspace before renting
-- **Flexible Quantities**: Rent exactly what you need
-- **Emotional Connection**: Build excitement through customization
-- **Simplified Decision-Making**: Clear pricing and item selection
-- **Streamlined Interface**: Focus on what matters most
-
-## 🔮 Future Enhancements
-
-- **User Accounts**: Save workspace configurations
-- **3D Preview**: More immersive workspace visualization
-- **Inventory Integration**: Real-time availability checking
-- **Payment Integration**: Seamless checkout process
-- **Delivery Scheduling**: Choose delivery times and locations
-- **Community Templates**: Share and browse workspace setups
-- **Advanced Filtering**: Filter by price, availability, features
-
-## 📞 Support
-
-This project was built as a frontend challenge demonstrating:
-
-- ✅ UX and product thinking
-- ✅ Visual interaction that feels good to use
-- ✅ Real-time visual feedback
-- ✅ Consideration of user needs
-- ✅ Advanced quantity management
-- ✅ Clean, maintainable code architecture
-- ✅ Streamlined user experience
-
-**The goal was to think user-centric, not algorithm-centric.**
+These decisions were made to align with the challenge’s intent: **build something usable, not overbuilt**.
 
 ---
 
-_Built with ❤️ for the monis.rent team_
+## 🚀 Deployment
+
+This project is deployed on **Vercel** to ensure fast access, easy review, and a smooth demo experience.
+
+---
+
+## 🎯 Business Context
+
+Built for **monis.rent**, a rental platform serving:
+
+- Digital nomads
+- Remote workers
+- Startups needing flexible workspace setups
+
+The app replaces traditional catalogs with:
+
+- Visual decision-making
+- Flexible rental quantities
+- Clear, transparent pricing
+- A more engaging rental experience
+
+---
+
+## 🔮 Possible Future Enhancements
+
+- Saved workspace configurations
+- 3D or canvas-based workspace preview
+- Inventory & availability integration
+- Checkout & payment flow
+- Delivery scheduling
+- Community-shared workspace templates
+
+---
+
+## ✅ What This Project Demonstrates
+
+- User-centric product thinking
+- Clean, maintainable frontend architecture
+- Thoughtful UX and interaction design
+- Clear understanding of scope and trade-offs
+- Focus on **how the product feels**, not just how it works
+
+---
+
+_Built with care as a design-first frontend challenge._

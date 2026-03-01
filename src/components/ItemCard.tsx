@@ -14,7 +14,7 @@ interface ItemCardProps {
   isSelected?: boolean;
 }
 
-export default function ItemCard({ item, onSelect, isSelected = false }: ItemCardProps) {
+const ItemCard = ({ item, onSelect, isSelected = false }: ItemCardProps) => {
   return (
     <button
       onClick={() => onSelect(item)}
@@ -27,4 +27,6 @@ export default function ItemCard({ item, onSelect, isSelected = false }: ItemCar
       <div className="text-xs text-gray-500 mt-1">${item.price}/mo</div>
     </button>
   );
-}
+};
+
+export default ItemCard;

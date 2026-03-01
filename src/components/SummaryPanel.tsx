@@ -23,12 +23,12 @@ interface SummaryPanelProps {
   onRent: () => void;
 }
 
-export default function SummaryPanel({
+const SummaryPanel = ({
   selectedItems,
   onRemoveItem,
   onUpdateQuantity,
   onRent,
-}: SummaryPanelProps) {
+}: SummaryPanelProps) => {
   const allItems = [
     ...selectedItems.desks.map((item, index) => ({
       ...item,
@@ -133,4 +133,6 @@ export default function SummaryPanel({
       </div>
     </div>
   );
-}
+};
+
+export default SummaryPanel;

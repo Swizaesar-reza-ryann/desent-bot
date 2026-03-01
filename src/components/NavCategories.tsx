@@ -7,7 +7,7 @@ interface NavCategoriesProps {
 
 const categories = ['Chairs', 'Desks', 'Accessories', 'All Items'];
 
-export default function NavCategories({ activeCategory, onCategoryChange }: NavCategoriesProps) {
+const NavCategories = ({ activeCategory, onCategoryChange }: NavCategoriesProps) => {
   return (
     <nav className="border-b border-gray-200 bg-white px-4 py-4">
       <div className="flex flex-col sm:flex-row sm:justify-center sm:space-x-8 space-y-2 sm:space-y-0">
@@ -27,4 +27,6 @@ export default function NavCategories({ activeCategory, onCategoryChange }: NavC
       </div>
     </nav>
   );
-}
+};
+
+export default NavCategories;
