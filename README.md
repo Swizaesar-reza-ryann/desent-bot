@@ -1,10 +1,10 @@
 # Workspace Designer for monis.rent
 
 🚀 **Live Demo**  
-👉 http://vercel-sample
+👉 https://desent-bot.vercel.app/
 
 📦 **GitHub Repository**  
-👉 https://github.com/username/repo-name
+👉 https://github.com/Swizaesar-reza-ryann/desent-bot
 
 ---
 
