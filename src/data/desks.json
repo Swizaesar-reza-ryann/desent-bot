@@ -1,0 +1,23 @@
+[
+  {
+    "id": "desk-1",
+    "name": "Standing Desk",
+    "price": 89,
+    "icon": "🪑",
+    "category": "desks"
+  },
+  {
+    "id": "desk-2",
+    "name": "Executive Desk",
+    "price": 120,
+    "icon": "🗄️",
+    "category": "desks"
+  },
+  {
+    "id": "desk-3",
+    "name": "Minimal Desk",
+    "price": 65,
+    "icon": "📋",
+    "category": "desks"
+  }
+]

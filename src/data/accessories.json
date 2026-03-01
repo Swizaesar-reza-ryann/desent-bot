@@ -1,0 +1,37 @@
+[
+  {
+    "id": "monitor-1",
+    "name": "27\" Monitor",
+    "price": 55,
+    "icon": "🖥️",
+    "category": "accessories"
+  },
+  {
+    "id": "lamp-1",
+    "name": "Desk Lamp",
+    "price": 25,
+    "icon": "💡",
+    "category": "accessories"
+  },
+  {
+    "id": "plant-1",
+    "name": "Desk Plant",
+    "price": 15,
+    "icon": "🪴",
+    "category": "accessories"
+  },
+  {
+    "id": "keyboard-1",
+    "name": "Mechanical Keyboard",
+    "price": 35,
+    "icon": "⌨️",
+    "category": "accessories"
+  },
+  {
+    "id": "mouse-1",
+    "name": "Wireless Mouse",
+    "price": 20,
+    "icon": "🖱️",
+    "category": "accessories"
+  }
+]

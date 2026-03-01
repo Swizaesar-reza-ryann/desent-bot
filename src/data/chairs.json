@@ -1,0 +1,23 @@
+[
+  {
+    "id": "chair-1",
+    "name": "Ergonomic Chair",
+    "price": 75,
+    "icon": "🪑",
+    "category": "chairs"
+  },
+  {
+    "id": "chair-2",
+    "name": "Executive Chair",
+    "price": 95,
+    "icon": "💺",
+    "category": "chairs"
+  },
+  {
+    "id": "chair-3",
+    "name": "Stool",
+    "price": 45,
+    "icon": "🪑",
+    "category": "chairs"
+  }
+]
